@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour {
 	Animator anim;
 	public int currentHealth;
 	public int startHealth = 100;
+	public bool isDead = false;
 
 	// Use this for initialization
 	void Awake () {
@@ -14,7 +15,8 @@ public class EnemyHealth : MonoBehaviour {
 	}
 
 	void Update () {
-		if (currentHealth <= 0)
-			anim.SetInteger ("Dead", 1);
+		if (currentHealth <= 0 && !isDead) {
+			Destroy(gameObject);
+		}
 	}
 }
