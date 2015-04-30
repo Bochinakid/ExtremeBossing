@@ -14,7 +14,7 @@ public class EnemyAttack : MonoBehaviour
 	EnemyHealth enemyHealth;                    // Reference to this enemy's health.
 	bool playerInRange;                         // Whether player is within the trigger collider and can be attacked.
 	float timer;                                // Timer for counting up to the next attack.
-	
+	public AudioClip Bite;
 	
 	void Awake ()
 	{
@@ -32,6 +32,7 @@ public class EnemyAttack : MonoBehaviour
 		if(other.gameObject == player)
 		{
 			// ... the player is in range.
+			GetComponent<AudioSource>().PlayOneShot(Bite);
 			playerInRange = true;
 		}
 	}
