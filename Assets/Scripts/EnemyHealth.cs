@@ -7,12 +7,7 @@ public class EnemyHealth : MonoBehaviour {
 	public int startHealth = 100;
 
 	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	void Awake () {
+		currentHealth = startHealth;
 	}
 }

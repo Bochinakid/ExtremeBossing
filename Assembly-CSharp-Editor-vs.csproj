@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{0C886EA0-1A23-DD65-9D21-4581CFF66FCB}</ProjectGuid>
+	<ProjectGuid>{3E195191-1F8E-1920-F2D4-68FDEE7ACC64}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -64,7 +64,7 @@
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\Toon Character Pack\Shaders\Unlit-Alpha.shader" />
  <Reference Include="Assembly-UnityScript">
- <HintPath>E:/Chrome Downloads/ExtremeBossing_v0.1b/ExtremeBossing chris/ExtremeBossing chris/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>E:/Chrome Downloads/ExtremeBossing_v0.1b/ExtremeBossing/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -102,9 +102,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{AF19AF3E-D1A5-FDFA-3E64-DE43C8FFFAF8}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+      <Project>{190ADE1B-6C4F-7317-9342-D7D3E2B122A4}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-vs.csproj">
-      <Project>{75BC50D1-4BD8-DCA2-A227-A8507B914A34}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+      <Project>{74E85BF6-8470-A0E1-84C2-542A63764FD7}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
