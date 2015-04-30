@@ -8,8 +8,6 @@ public class ProjDmg : MonoBehaviour {
 		if (col.gameObject.tag == "Enemy") {
 			Debug.Log ("Hit Enemy");
 			col.gameObject.GetComponent<EnemyHealth> ().currentHealth -= 10;
-		} else {
-			Destroy (gameObject);
-		}
+		} 
 	}
 }

@@ -93,13 +93,6 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _TranslucencyMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
@@ -108,6 +101,13 @@ Material:
       data:
         first:
           name: _GlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _TranslucencyMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -130,24 +130,16 @@ Material:
         second: .46029824
       data:
         first:
-          name: _SquashAmount
-        second: 1
+          name: _Parallax
+        second: .0199999996
       data:
         first:
           name: _Occlusion
         second: 7.5
       data:
         first:
-          name: _Parallax
-        second: .0199999996
-      data:
-        first:
-          name: _BaseLight
-        second: .349999994
-      data:
-        first:
-          name: _AO
-        second: 2.4000001
+          name: _SquashAmount
+        second: 1
       data:
         first:
           name: _TranslucencyViewDependency
@@ -156,6 +148,14 @@ Material:
         first:
           name: _ShadowStrength
         second: 1
+      data:
+        first:
+          name: _BaseLight
+        second: .349999994
+      data:
+        first:
+          name: _AO
+        second: 2.4000001
     m_Colors:
       data:
         first:
@@ -171,17 +171,17 @@ Material:
         second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
-          name: _EmisColor
-        second: {r: .200000003, g: .200000003, b: .200000003, a: 0}
-      data:
-        first:
           name: _Emission
         second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
-          name: _BackColor
-        second: {r: 1, g: 1, b: 1, a: 1}
+          name: _EmisColor
+        second: {r: .200000003, g: .200000003, b: .200000003, a: 0}
       data:
         first:
           name: _TranslucencyColor
         second: {r: .730000019, g: .850000024, b: .409999996, a: 1}
+      data:
+        first:
+          name: _BackColor
+        second: {r: 1, g: 1, b: 1, a: 1}
