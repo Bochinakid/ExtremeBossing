@@ -37,7 +37,6 @@ public class BotAIController : MonoBehaviour
 		{
 			// ... disable the nav mesh agent.
 			nav.enabled = false;
-			anim.SetInteger("player",0);
 		}
 
 	}
