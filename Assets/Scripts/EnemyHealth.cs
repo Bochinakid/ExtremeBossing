@@ -7,6 +7,7 @@ public class EnemyHealth : MonoBehaviour {
 	public int currentHealth;
 	public int startHealth = 100;
 	public bool isDead = false;
+	public AudioClip Hit;
 
 	// Use this for initialization
 	void Awake () {
@@ -15,6 +16,7 @@ public class EnemyHealth : MonoBehaviour {
 	}
 
 	void Update () {
+		GetComponent<AudioSource>().PlayOneShot(Hit);
 		if (currentHealth <= 0 && !isDead) {
 			Destroy(gameObject);
 		}

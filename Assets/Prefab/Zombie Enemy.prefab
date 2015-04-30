@@ -1317,7 +1317,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!54 &5405872
 Rigidbody:
@@ -1551,7 +1551,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 1
+      value: .899999976
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1633,6 +1633,7 @@ MonoBehaviour:
   currentHealth: 0
   startHealth: 100
   isDead: 0
+  Hit: {fileID: 8300000, guid: 059bcab45641b9244b863bdc1c0a931e, type: 3}
 --- !u!119 &11970196
 Projector:
   m_ObjectHideFlags: 1
