@@ -64,7 +64,7 @@
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\Toon Character Pack\Shaders\Unlit-Alpha.shader" />
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/Chrisitan Wang/Documents/GitHub/ExtremeBossing/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/Users/JoeGreenBeast/Documents/GitHub/ExtremeBossing/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
