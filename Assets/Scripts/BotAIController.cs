@@ -11,12 +11,9 @@ public class BotAIController : MonoBehaviour
 	PlayerHealth playerHealth;      // Reference to the player's health.
 	EnemyHealth enemyHealth;        // Reference to this enemy's health.
 	NavMeshAgent nav;               // Reference to the nav mesh agent.
-	
-	private Animator anim;							// a reference to the animator on the character
 	void Start ()
 	{
 		// initialising reference variables
-		anim = gameObject.GetComponent<Animator>();
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
 		playerHealth = player.GetComponent <PlayerHealth> ();
 		enemyHealth = GetComponent <EnemyHealth> ();

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Entrance
+  - Boss
+  - FireWall
+  - Counter
   layers:
   - Default
   - TransparentFX

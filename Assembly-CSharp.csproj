@@ -48,13 +48,15 @@
   <ItemGroup>
      <Compile Include="Assets\Elementals\Scripts\OrbitCamera.cs" />
      <Compile Include="Assets\Elementals\Scripts\TestParticles.cs" />
-     <Compile Include="Assets\Scripts\AnimTrigger.cs" />
      <Compile Include="Assets\Scripts\BossAI.cs" />
      <Compile Include="Assets\Scripts\BossHealth.cs" />
      <Compile Include="Assets\Scripts\BotAIController.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\ChangeLevel.cs" />
+     <Compile Include="Assets\Scripts\ChangeLevel1.cs" />
+     <Compile Include="Assets\Scripts\ChangeLevel2.cs" />
+     <Compile Include="Assets\Scripts\DestroyWalls.cs" />
      <Compile Include="Assets\Scripts\EnemyAttack.cs" />
+     <Compile Include="Assets\Scripts\EnemyCounter.cs" />
      <Compile Include="Assets\Scripts\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\EnemyManager.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
