@@ -117,16 +117,16 @@ Material:
         second: {r: .604477644, g: .604477644, b: .604477644, a: 1}
       data:
         first:
+          name: _SpecularColor
+        second: {r: .300699413, g: 1, b: 0, a: 1}
+      data:
+        first:
           name: _RimColor
         second: {r: 0, g: .118881203, b: 1, a: 1}
       data:
         first:
           name: _DiffuseColor
         second: {r: 1, g: 0, b: 0, a: 1}
-      data:
-        first:
-          name: _SpecularColor
-        second: {r: .300699413, g: 1, b: 0, a: 1}
       data:
         first:
           name: _color

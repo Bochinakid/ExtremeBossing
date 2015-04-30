@@ -12,7 +12,6 @@ GameObject:
   - 135: {fileID: 13536846}
   - 23: {fileID: 2365400}
   - 54: {fileID: 5490088}
-  - 114: {fileID: 11453560}
   m_Layer: 0
   m_Name: Snow
   m_TagString: Untagged
@@ -78,17 +77,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &11453560
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcc416b601fb9ea46ac2a14c17b10bb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &13536846
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -28,6 +28,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
+		Animator anim;
         private Camera m_Camera;
         private bool m_Jump;
         private float m_YRotation;
@@ -56,6 +57,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
+
+		private void Awake() {
+			anim = GetComponent <Animator> ();
+		}
 
 
         // Update is called once per frame
@@ -94,6 +99,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void FixedUpdate()
         {
+			float h = CrossPlatformInputManager.GetAxisRaw ("Horizontal");
+			float v = CrossPlatformInputManager.GetAxisRaw ("Vertical");
+			
+			Animating (h, v);
+
             float speed;
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
@@ -128,7 +138,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_CollisionFlags = m_CharacterController.Move(m_MoveDir*Time.fixedDeltaTime);
 
             ProgressStepCycle(speed);
-            UpdateCameraPosition(speed);
+            UpdateCameraPosition(speed);			
+
         }
 
 
@@ -253,5 +264,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
+
+		void Animating (float h, float v)
+		{
+			bool walking = h != 0f || v != 0f;
+
+			anim.SetBool ("IsWalking", walking);
+		}
     }
 }
